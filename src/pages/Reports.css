@@ -1,0 +1,67 @@
+.reports-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.report-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s;
+}
+.report-card:hover {
+  transform: translateY(-4px);
+}
+
+.report-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.bg-indigo-100 { background-color: #E0E7FF; }
+.text-indigo-600 { color: #4F46E5; }
+
+.bg-rose-100 { background-color: #FFE4E6; }
+.text-rose-600 { color: #E11D48; }
+
+.bg-emerald-100 { background-color: #D1FAE5; }
+.text-emerald-600 { color: #059669; }
+
+.report-card h3 {
+  font-size: 1.25rem;
+  color: var(--text-main);
+  margin-bottom: -0.25rem;
+}
+.report-card p {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  flex: 1; /* Pushes actions to bottom */
+}
+
+.report-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.btn-excel {
+  color: #059669;
+  border-color: #059669;
+}
+.btn-excel:hover {
+  background-color: rgba(5, 150, 105, 0.05);
+}

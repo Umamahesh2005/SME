@@ -1,0 +1,39 @@
+.expenses-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.expenses-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  color: var(--text-main);
+}
+.text-primary {
+  color: var(--primary);
+}
+
+.expenses-list-card table {
+  margin-top: -0.5rem;
+}
+
+.pie-wrapper {
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .expenses-grid {
+    grid-template-columns: 1fr;
+  }
+}
